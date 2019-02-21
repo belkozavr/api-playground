@@ -1,0 +1,2345 @@
+{
+	"id": "a20931ba-3e06-4308-bb59-092afd3dc913",
+	"name": "Best Buy API Playground",
+	"allTests": [],
+	"timestamp": "2019-02-21T09:28:37.219Z",
+	"collection_id": "80b452e9-38b7-4740-afb2-273414e231fb",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "f3010f11-e8db-4370-9938-d0fa79ac9a61",
+	"data": [],
+	"delay": 0,
+	"count": 5,
+	"collection": {
+		"id": "80b452e9-38b7-4740-afb2-273414e231fb",
+		"name": "Best Buy API Playground",
+		"description": "A sample dataset and API for you to experiment with.",
+		"auth": null,
+		"events": null,
+		"variables": null,
+		"order": [],
+		"folders_order": [
+			"bb58d17c-1688-4893-bc00-8a46514a6106",
+			"45ba1f73-d30a-45c5-bf95-9d2fd8753eb4",
+			"5934743d-38b5-4a54-939e-5c806dafe97a",
+			"67a407b6-0438-4c97-9b4a-65aaed478a4e",
+			"8f6eb0a5-2333-4d3f-a222-f3f7f8e4214e"
+		],
+		"owner": "4543064",
+		"permissions": {},
+		"favorite": false,
+		"shared": false,
+		"type": "collection",
+		"depth": 0
+	},
+	"folder": null,
+	"environment": null,
+	"globals": [
+		{
+			"key": "broker_id",
+			"value": "5c59691700b93e00421f4a34",
+			"description": "",
+			"enabled": true
+		},
+		{
+			"key": "re_id_apartment",
+			"value": "5c59692877e7b5003f69d202",
+			"description": "",
+			"enabled": true
+		},
+		{
+			"key": "data_room_single",
+			"value": "1",
+			"description": "",
+			"enabled": true
+		},
+		{
+			"key": "id_service",
+			"value": "https://id-develop.mcmakler.com",
+			"description": "",
+			"enabled": true
+		},
+		{
+			"key": "application_service",
+			"value": "https://application-develop.mcmakler.com",
+			"description": "",
+			"enabled": true
+		},
+		{
+			"key": "re_service",
+			"value": "https://properties-develop.mcmakler.com",
+			"description": "",
+			"enabled": true
+		},
+		{
+			"key": "document_service",
+			"value": "https://document-service-develop.mcmakler.com",
+			"description": "",
+			"enabled": true
+		},
+		{
+			"value": "1",
+			"key": "application_counter",
+			"enabled": true
+		},
+		{
+			"key": "data_room_rq_counter",
+			"value": "1",
+			"description": "",
+			"enabled": true
+		},
+		{
+			"value": "0",
+			"key": "transition_counter",
+			"enabled": true
+		},
+		{
+			"value": "1",
+			"key": "service_application_counter",
+			"enabled": true
+		},
+		{
+			"key": "states_counter",
+			"value": "1",
+			"description": "",
+			"type": "text",
+			"enabled": true
+		}
+	],
+	"results": [
+		{
+			"name": "Return all products - no filters",
+			"id": "b424b1a7-6376-43e9-9b96-5453026e2c12",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Products Scheme is valid": true,
+				"Product data is available": true,
+				"Default page limit is correct": true,
+				"Default skip is correct": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Products Scheme is valid": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Product data is available": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Default page limit is correct": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Default skip is correct": {
+					"pass": 5,
+					"fail": 0
+				}
+			},
+			"times": [
+				"316",
+				"264",
+				"295",
+				"261",
+				"255"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Products Scheme is valid": true,
+					"Product data is available": true,
+					"Default page limit is correct": true,
+					"Default skip is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Products Scheme is valid": true,
+					"Product data is available": true,
+					"Default page limit is correct": true,
+					"Default skip is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Products Scheme is valid": true,
+					"Product data is available": true,
+					"Default page limit is correct": true,
+					"Default skip is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Products Scheme is valid": true,
+					"Product data is available": true,
+					"Default page limit is correct": true,
+					"Default skip is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Products Scheme is valid": true,
+					"Product data is available": true,
+					"Default page limit is correct": true,
+					"Default skip is correct": true
+				}
+			],
+			"time": "255",
+			"totalRequestTime": 1391,
+			"iterationResults": {}
+		},
+		{
+			"name": "Return all products - limit output and skip",
+			"id": "dd1df7c5-8d76-41ce-8c7f-280a83cbbaeb",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Returned values of skip and limit are correct": true,
+				"Request returns corrent quantity of products": true,
+				"Expected first product id is correct": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Returned values of skip and limit are correct": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Product data should be empty when limit is set to zero": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Request returns corrent quantity of products": {
+					"pass": 4,
+					"fail": 0
+				},
+				"Expected first product id is correct": {
+					"pass": 4,
+					"fail": 0
+				}
+			},
+			"times": [
+				"310",
+				"230",
+				"233",
+				"242",
+				"238"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Returned values of skip and limit are correct": true,
+					"Product data should be empty when limit is set to zero": true
+				},
+				{
+					"Status code is 200": true,
+					"Returned values of skip and limit are correct": true,
+					"Request returns corrent quantity of products": true,
+					"Expected first product id is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Returned values of skip and limit are correct": true,
+					"Request returns corrent quantity of products": true,
+					"Expected first product id is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Returned values of skip and limit are correct": true,
+					"Request returns corrent quantity of products": true,
+					"Expected first product id is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Returned values of skip and limit are correct": true,
+					"Request returns corrent quantity of products": true,
+					"Expected first product id is correct": true
+				}
+			],
+			"time": "238",
+			"totalRequestTime": 1253,
+			"iterationResults": {}
+		},
+		{
+			"name": "Create a new product",
+			"id": "4fb84eab-e032-4908-874c-1edfca193794",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Product data schema is valid": true,
+				"Responce contains product id": true,
+				"Response contains correct price": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Product data schema is valid": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Responce contains product id": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Response contains correct price": {
+					"pass": 5,
+					"fail": 0
+				}
+			},
+			"times": [
+				"22",
+				"22",
+				"17",
+				"15",
+				"19"
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Product data schema is valid": true,
+					"Responce contains product id": true,
+					"Response contains correct price": true
+				},
+				{
+					"Status code is 201": true,
+					"Product data schema is valid": true,
+					"Responce contains product id": true,
+					"Response contains correct price": true
+				},
+				{
+					"Status code is 201": true,
+					"Product data schema is valid": true,
+					"Responce contains product id": true,
+					"Response contains correct price": true
+				},
+				{
+					"Status code is 201": true,
+					"Product data schema is valid": true,
+					"Responce contains product id": true,
+					"Response contains correct price": true
+				},
+				{
+					"Status code is 201": true,
+					"Product data schema is valid": true,
+					"Responce contains product id": true,
+					"Response contains correct price": true
+				}
+			],
+			"time": "19",
+			"totalRequestTime": 95,
+			"iterationResults": {}
+		},
+		{
+			"name": "Select product by id",
+			"id": "cfbf8251-8019-49c1-ba65-bbca46f79c05",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Product data schema is valid": true,
+				"Response contains correct price": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Product data schema is valid": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Response contains correct price": {
+					"pass": 5,
+					"fail": 0
+				}
+			},
+			"times": [
+				"7",
+				"8",
+				"6",
+				"5",
+				"5"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Product data schema is valid": true,
+					"Response contains correct price": true
+				},
+				{
+					"Status code is 200": true,
+					"Product data schema is valid": true,
+					"Response contains correct price": true
+				},
+				{
+					"Status code is 200": true,
+					"Product data schema is valid": true,
+					"Response contains correct price": true
+				},
+				{
+					"Status code is 200": true,
+					"Product data schema is valid": true,
+					"Response contains correct price": true
+				},
+				{
+					"Status code is 200": true,
+					"Product data schema is valid": true,
+					"Response contains correct price": true
+				}
+			],
+			"time": "5",
+			"totalRequestTime": 31,
+			"iterationResults": {}
+		},
+		{
+			"name": "Update a product based on ID",
+			"id": "27e292ab-6e29-4d6c-aeff-5308d0ad1c92",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Product data is updated": true,
+				"Response contains correct price": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Product data is updated": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Response contains correct price": {
+					"pass": 5,
+					"fail": 0
+				}
+			},
+			"times": [
+				"11",
+				"8",
+				"29",
+				"10",
+				"8"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Product data is updated": true,
+					"Response contains correct price": true
+				},
+				{
+					"Status code is 200": true,
+					"Product data is updated": true,
+					"Response contains correct price": true
+				},
+				{
+					"Status code is 200": true,
+					"Product data is updated": true,
+					"Response contains correct price": true
+				},
+				{
+					"Status code is 200": true,
+					"Product data is updated": true,
+					"Response contains correct price": true
+				},
+				{
+					"Status code is 200": true,
+					"Product data is updated": true,
+					"Response contains correct price": true
+				}
+			],
+			"time": "8",
+			"totalRequestTime": 66,
+			"iterationResults": {}
+		},
+		{
+			"name": "Delete a single product based on the ID supplied",
+			"id": "bdac8390-9126-4b49-8fe0-5a613667c043",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Deleted product cannot be found": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Deleted product cannot be found": {
+					"pass": 5,
+					"fail": 0
+				}
+			},
+			"times": [
+				"9",
+				"9",
+				"6",
+				"10",
+				"8"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Deleted product cannot be found": true
+				},
+				{
+					"Status code is 200": true,
+					"Deleted product cannot be found": true
+				},
+				{
+					"Status code is 200": true,
+					"Deleted product cannot be found": true
+				},
+				{
+					"Status code is 200": true,
+					"Deleted product cannot be found": true
+				},
+				{
+					"Status code is 200": true,
+					"Deleted product cannot be found": true
+				}
+			],
+			"time": "8",
+			"totalRequestTime": 42,
+			"iterationResults": {}
+		},
+		{
+			"name": "Returns all stores - no filters",
+			"id": "5e2858bf-a76a-4892-b175-c990c754e046",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Stores Scheme is valid": true,
+				"Stores data is available": true,
+				"Default page limit is correct": true,
+				"Default skip is correct": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Stores Scheme is valid": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Stores data is available": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Default page limit is correct": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Default skip is correct": {
+					"pass": 5,
+					"fail": 0
+				}
+			},
+			"times": [
+				"56",
+				"40",
+				"30",
+				"28",
+				"34"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Stores Scheme is valid": true,
+					"Stores data is available": true,
+					"Default page limit is correct": true,
+					"Default skip is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Stores Scheme is valid": true,
+					"Stores data is available": true,
+					"Default page limit is correct": true,
+					"Default skip is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Stores Scheme is valid": true,
+					"Stores data is available": true,
+					"Default page limit is correct": true,
+					"Default skip is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Stores Scheme is valid": true,
+					"Stores data is available": true,
+					"Default page limit is correct": true,
+					"Default skip is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Stores Scheme is valid": true,
+					"Stores data is available": true,
+					"Default page limit is correct": true,
+					"Default skip is correct": true
+				}
+			],
+			"time": "34",
+			"totalRequestTime": 188,
+			"iterationResults": {}
+		},
+		{
+			"name": "Returns all stores - limit output and skip",
+			"id": "c32c9e1c-de00-4210-8de9-f1162d9b3fea",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Returned values of skip and limit are correct": true,
+				"Request returns corrent quantity of stores": true,
+				"Expected first store id is correct": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Returned values of skip and limit are correct": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Stores data should be empty when limit is set to zero": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Request returns corrent quantity of stores": {
+					"pass": 4,
+					"fail": 0
+				},
+				"Expected first store id is correct": {
+					"pass": 4,
+					"fail": 0
+				}
+			},
+			"times": [
+				"17",
+				"17",
+				"32",
+				"30",
+				"57"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Returned values of skip and limit are correct": true,
+					"Stores data should be empty when limit is set to zero": true
+				},
+				{
+					"Status code is 200": true,
+					"Returned values of skip and limit are correct": true,
+					"Request returns corrent quantity of stores": true,
+					"Expected first store id is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Returned values of skip and limit are correct": true,
+					"Request returns corrent quantity of stores": true,
+					"Expected first store id is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Returned values of skip and limit are correct": true,
+					"Request returns corrent quantity of stores": true,
+					"Expected first store id is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Returned values of skip and limit are correct": true,
+					"Request returns corrent quantity of stores": true,
+					"Expected first store id is correct": true
+				}
+			],
+			"time": "57",
+			"totalRequestTime": 153,
+			"iterationResults": {}
+		},
+		{
+			"name": "Create a new store",
+			"id": "24df1934-252b-410f-bd3d-5fc46fe1b7cd",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Total number of stores is incremented": true,
+				"Response data is correct": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Total number of stores is incremented": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Response data is correct": {
+					"pass": 5,
+					"fail": 0
+				}
+			},
+			"times": [
+				"20",
+				"12",
+				"22",
+				"18",
+				"25"
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Total number of stores is incremented": true,
+					"Response data is correct": true
+				},
+				{
+					"Status code is 201": true,
+					"Total number of stores is incremented": true,
+					"Response data is correct": true
+				},
+				{
+					"Status code is 201": true,
+					"Total number of stores is incremented": true,
+					"Response data is correct": true
+				},
+				{
+					"Status code is 201": true,
+					"Total number of stores is incremented": true,
+					"Response data is correct": true
+				},
+				{
+					"Status code is 201": true,
+					"Total number of stores is incremented": true,
+					"Response data is correct": true
+				}
+			],
+			"time": "25",
+			"totalRequestTime": 97,
+			"iterationResults": {}
+		},
+		{
+			"name": "Return a store based on store ID",
+			"id": "6f28d344-e9d2-4f25-9430-feb298f54c04",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response data is correct": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Response data is correct": {
+					"pass": 5,
+					"fail": 0
+				}
+			},
+			"times": [
+				"9",
+				"6",
+				"6",
+				"15",
+				"8"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response data is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Response data is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Response data is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Response data is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Response data is correct": true
+				}
+			],
+			"time": "8",
+			"totalRequestTime": 44,
+			"iterationResults": {}
+		},
+		{
+			"name": "Update a store based on store ID",
+			"id": "a3d0cd0e-8187-4e56-bfcf-e0b5839335ae",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response data is correct": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Response data is correct": {
+					"pass": 5,
+					"fail": 0
+				}
+			},
+			"times": [
+				"9",
+				"11",
+				"14",
+				"11",
+				"8"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response data is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Response data is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Response data is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Response data is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Response data is correct": true
+				}
+			],
+			"time": "8",
+			"totalRequestTime": 53,
+			"iterationResults": {}
+		},
+		{
+			"name": "Delete a single store based on the ID supplied",
+			"id": "0790d339-30bc-4831-aef7-6c14b5e5aa40",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Deleted product cannot be found": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Deleted product cannot be found": {
+					"pass": 5,
+					"fail": 0
+				}
+			},
+			"times": [
+				"10",
+				"8",
+				"7",
+				"8",
+				"10"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Deleted product cannot be found": true
+				},
+				{
+					"Status code is 200": true,
+					"Deleted product cannot be found": true
+				},
+				{
+					"Status code is 200": true,
+					"Deleted product cannot be found": true
+				},
+				{
+					"Status code is 200": true,
+					"Deleted product cannot be found": true
+				},
+				{
+					"Status code is 200": true,
+					"Deleted product cannot be found": true
+				}
+			],
+			"time": "10",
+			"totalRequestTime": 43,
+			"iterationResults": {}
+		},
+		{
+			"name": "Returns all services",
+			"id": "7211659d-4e56-4c44-b784-7b316082aec5",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Stores Scheme is valid": true,
+				"Stores data is available": true,
+				"Default page limit is correct": true,
+				"Default skip is correct": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Stores Scheme is valid": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Stores data is available": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Default page limit is correct": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Default skip is correct": {
+					"pass": 5,
+					"fail": 0
+				}
+			},
+			"times": [
+				"7",
+				"8",
+				"9",
+				"6",
+				"8"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Stores Scheme is valid": true,
+					"Stores data is available": true,
+					"Default page limit is correct": true,
+					"Default skip is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Stores Scheme is valid": true,
+					"Stores data is available": true,
+					"Default page limit is correct": true,
+					"Default skip is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Stores Scheme is valid": true,
+					"Stores data is available": true,
+					"Default page limit is correct": true,
+					"Default skip is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Stores Scheme is valid": true,
+					"Stores data is available": true,
+					"Default page limit is correct": true,
+					"Default skip is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Stores Scheme is valid": true,
+					"Stores data is available": true,
+					"Default page limit is correct": true,
+					"Default skip is correct": true
+				}
+			],
+			"time": "8",
+			"totalRequestTime": 38,
+			"iterationResults": {}
+		},
+		{
+			"name": "Returns all services - limit and skip",
+			"id": "ee8ce252-f1ad-4b7c-ba08-1f5253ca1300",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error",
+				"detail": {
+					"name": "Internal Server Error",
+					"detail": "A generic error message, given when no more specific message is suitable."
+				}
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				"6",
+				"6",
+				"5",
+				"5",
+				"5"
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{}
+			],
+			"time": "5",
+			"totalRequestTime": 27,
+			"iterationResults": {}
+		},
+		{
+			"name": "Create a new service",
+			"id": "0411e5e3-996d-490b-ac25-b924ec6f2c8d",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Total number is incremented": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Total number is incremented": {
+					"pass": 5,
+					"fail": 0
+				}
+			},
+			"times": [
+				"14",
+				"15",
+				"26",
+				"11",
+				"19"
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Total number is incremented": true
+				},
+				{
+					"Status code is 201": true,
+					"Total number is incremented": true
+				},
+				{
+					"Status code is 201": true,
+					"Total number is incremented": true
+				},
+				{
+					"Status code is 201": true,
+					"Total number is incremented": true
+				},
+				{
+					"Status code is 201": true,
+					"Total number is incremented": true
+				}
+			],
+			"time": "19",
+			"totalRequestTime": 85,
+			"iterationResults": {}
+		},
+		{
+			"name": "Return a services based on service ID",
+			"id": "75530254-afd3-4edb-9e23-a3b6417980c8",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response data is correct": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Response data is correct": {
+					"pass": 5,
+					"fail": 0
+				}
+			},
+			"times": [
+				"4",
+				"4",
+				"5",
+				"5",
+				"3"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response data is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Response data is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Response data is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Response data is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Response data is correct": true
+				}
+			],
+			"time": "3",
+			"totalRequestTime": 21,
+			"iterationResults": {}
+		},
+		{
+			"name": "Update a services based on service ID",
+			"id": "43f4621b-bf69-40d4-8a72-7fd4f06963c7",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response data is correct": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Response data is correct": {
+					"pass": 5,
+					"fail": 0
+				}
+			},
+			"times": [
+				"6",
+				"7",
+				"8",
+				"6",
+				"6"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response data is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Response data is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Response data is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Response data is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Response data is correct": true
+				}
+			],
+			"time": "6",
+			"totalRequestTime": 33,
+			"iterationResults": {}
+		},
+		{
+			"name": "Delete a single service based on the ID supplied",
+			"id": "682f62e4-de14-425d-86b2-bd90c90807bd",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Deleted product cannot be found": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Deleted product cannot be found": {
+					"pass": 5,
+					"fail": 0
+				}
+			},
+			"times": [
+				"9",
+				"8",
+				"8",
+				"8",
+				"8"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Deleted product cannot be found": true
+				},
+				{
+					"Status code is 200": true,
+					"Deleted product cannot be found": true
+				},
+				{
+					"Status code is 200": true,
+					"Deleted product cannot be found": true
+				},
+				{
+					"Status code is 200": true,
+					"Deleted product cannot be found": true
+				},
+				{
+					"Status code is 200": true,
+					"Deleted product cannot be found": true
+				}
+			],
+			"time": "8",
+			"totalRequestTime": 41,
+			"iterationResults": {}
+		},
+		{
+			"name": "Return all categories",
+			"id": "8efddfcf-b7df-4f2e-84e9-06d442426a47",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				"63",
+				"50",
+				"61",
+				"65",
+				"58"
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{}
+			],
+			"time": "58",
+			"totalRequestTime": 297,
+			"iterationResults": {}
+		},
+		{
+			"name": "Creates a new category",
+			"id": "41123361-3aa1-4ea1-8f0a-bf531d3b379d",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Total number is incremented": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Total number is incremented": {
+					"pass": 5,
+					"fail": 0
+				}
+			},
+			"times": [
+				"15",
+				"15",
+				"13",
+				"15",
+				"12"
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Total number is incremented": true
+				},
+				{
+					"Status code is 201": true,
+					"Total number is incremented": true
+				},
+				{
+					"Status code is 201": true,
+					"Total number is incremented": true
+				},
+				{
+					"Status code is 201": true,
+					"Total number is incremented": true
+				},
+				{
+					"Status code is 201": true,
+					"Total number is incremented": true
+				}
+			],
+			"time": "12",
+			"totalRequestTime": 70,
+			"iterationResults": {}
+		},
+		{
+			"name": "Returns a categories based on category ID",
+			"id": "75c90505-5150-43ca-99bb-75a6d91658ec",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 5,
+					"fail": 0
+				}
+			},
+			"times": [
+				"5",
+				"6",
+				"6",
+				"6",
+				"7"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "7",
+			"totalRequestTime": 30,
+			"iterationResults": {}
+		},
+		{
+			"name": "Update a categories based on category ID",
+			"id": "2fdc2382-e40b-4912-868b-87c5bee07ab6",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response data is correct": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Response data is correct": {
+					"pass": 5,
+					"fail": 0
+				}
+			},
+			"times": [
+				"8",
+				"9",
+				"7",
+				"7",
+				"7"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response data is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Response data is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Response data is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Response data is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Response data is correct": true
+				}
+			],
+			"time": "7",
+			"totalRequestTime": 38,
+			"iterationResults": {}
+		},
+		{
+			"name": "Deletes a single category based on the ID supplied",
+			"id": "c94ce926-1286-4948-b9df-6c6aa3a4b877",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Deleted product cannot be found": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Deleted product cannot be found": {
+					"pass": 5,
+					"fail": 0
+				}
+			},
+			"times": [
+				"89",
+				"89",
+				"86",
+				"77",
+				"83"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Deleted product cannot be found": true
+				},
+				{
+					"Status code is 200": true,
+					"Deleted product cannot be found": true
+				},
+				{
+					"Status code is 200": true,
+					"Deleted product cannot be found": true
+				},
+				{
+					"Status code is 200": true,
+					"Deleted product cannot be found": true
+				},
+				{
+					"Status code is 200": true,
+					"Deleted product cannot be found": true
+				}
+			],
+			"time": "83",
+			"totalRequestTime": 424,
+			"iterationResults": {}
+		},
+		{
+			"name": "Returns the current version of the API Playground being run",
+			"id": "eecc40e5-b764-4019-85e9-5c42225e41f1",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 5,
+					"fail": 0
+				}
+			},
+			"times": [
+				"2",
+				"2",
+				"2",
+				"2",
+				"3"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "3",
+			"totalRequestTime": 11,
+			"iterationResults": {}
+		},
+		{
+			"name": "Returns healthcheck information about the system",
+			"id": "3f91f3f1-a2ee-4509-83c9-80c0cb2eec69",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 5,
+					"fail": 0
+				}
+			},
+			"times": [
+				"31",
+				"33",
+				"29",
+				"27",
+				"32"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "32",
+			"totalRequestTime": 152,
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 303,
+	"totalFail": 0,
+	"totalTime": 4723,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "Return all products - no filters",
+			"id": "b424b1a7-6376-43e9-9b96-5453026e2c12",
+			"url": "http://localhost:3030/products",
+			"time": "255",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Products Scheme is valid": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Product data is available": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Default page limit is correct": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Default skip is correct": {
+					"pass": 5,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Return all products - limit output and skip",
+			"id": "dd1df7c5-8d76-41ce-8c7f-280a83cbbaeb",
+			"url": "http://localhost:3030/products?$limit=0&$skip=0",
+			"time": "238",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Returned values of skip and limit are correct": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Product data should be empty when limit is set to zero": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Request returns corrent quantity of products": {
+					"pass": 4,
+					"fail": 0
+				},
+				"Expected first product id is correct": {
+					"pass": 4,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Create a new product",
+			"id": "4fb84eab-e032-4908-874c-1edfca193794",
+			"url": "http://localhost:3030/products",
+			"time": "19",
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Product data schema is valid": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Responce contains product id": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Response contains correct price": {
+					"pass": 5,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Select product by id",
+			"id": "cfbf8251-8019-49c1-ba65-bbca46f79c05",
+			"url": "http://localhost:3030/products/9999797",
+			"time": "5",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Product data schema is valid": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Response contains correct price": {
+					"pass": 5,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Update a product based on ID",
+			"id": "27e292ab-6e29-4d6c-aeff-5308d0ad1c92",
+			"url": "http://localhost:3030/products/9999797",
+			"time": "8",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Product data is updated": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Response contains correct price": {
+					"pass": 5,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Delete a single product based on the ID supplied",
+			"id": "bdac8390-9126-4b49-8fe0-5a613667c043",
+			"url": "http://localhost:3030/products/9999797",
+			"time": "8",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Deleted product cannot be found": {
+					"pass": 5,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Returns all stores - no filters",
+			"id": "5e2858bf-a76a-4892-b175-c990c754e046",
+			"url": "http://localhost:3030/stores",
+			"time": "34",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Stores Scheme is valid": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Stores data is available": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Default page limit is correct": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Default skip is correct": {
+					"pass": 5,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Returns all stores - limit output and skip",
+			"id": "c32c9e1c-de00-4210-8de9-f1162d9b3fea",
+			"url": "http://localhost:3030/stores?$limit=0&$skip=0",
+			"time": "57",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Returned values of skip and limit are correct": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Stores data should be empty when limit is set to zero": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Request returns corrent quantity of stores": {
+					"pass": 4,
+					"fail": 0
+				},
+				"Expected first store id is correct": {
+					"pass": 4,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Create a new store",
+			"id": "24df1934-252b-410f-bd3d-5fc46fe1b7cd",
+			"url": "http://localhost:3030/stores",
+			"time": "25",
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Total number of stores is incremented": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Response data is correct": {
+					"pass": 5,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Return a store based on store ID",
+			"id": "6f28d344-e9d2-4f25-9430-feb298f54c04",
+			"url": "http://localhost:3030/stores/8950",
+			"time": "8",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Response data is correct": {
+					"pass": 5,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Update a store based on store ID",
+			"id": "a3d0cd0e-8187-4e56-bfcf-e0b5839335ae",
+			"url": "http://localhost:3030/stores/8950",
+			"time": "8",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Response data is correct": {
+					"pass": 5,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Delete a single store based on the ID supplied",
+			"id": "0790d339-30bc-4831-aef7-6c14b5e5aa40",
+			"url": "http://localhost:3030/stores/8950",
+			"time": "10",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Deleted product cannot be found": {
+					"pass": 5,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Returns all services",
+			"id": "7211659d-4e56-4c44-b784-7b316082aec5",
+			"url": "http://localhost:3030/services",
+			"time": "8",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Stores Scheme is valid": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Stores data is available": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Default page limit is correct": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Default skip is correct": {
+					"pass": 5,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Returns all services - limit and skip",
+			"id": "ee8ce252-f1ad-4b7c-ba08-1f5253ca1300",
+			"url": "http://localhost:3030/services?$limit=0&$skip={{:skip}}",
+			"time": "5",
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error",
+				"detail": {
+					"name": "Internal Server Error",
+					"detail": "A generic error message, given when no more specific message is suitable."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "Create a new service",
+			"id": "0411e5e3-996d-490b-ac25-b924ec6f2c8d",
+			"url": "http://localhost:3030/services",
+			"time": "19",
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Total number is incremented": {
+					"pass": 5,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Return a services based on service ID",
+			"id": "75530254-afd3-4edb-9e23-a3b6417980c8",
+			"url": "http://localhost:3030/services/45",
+			"time": "3",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Response data is correct": {
+					"pass": 5,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Update a services based on service ID",
+			"id": "43f4621b-bf69-40d4-8a72-7fd4f06963c7",
+			"url": "http://localhost:3030/services/45",
+			"time": "6",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Response data is correct": {
+					"pass": 5,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Delete a single service based on the ID supplied",
+			"id": "682f62e4-de14-425d-86b2-bd90c90807bd",
+			"url": "http://localhost:3030/services/45",
+			"time": "8",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Deleted product cannot be found": {
+					"pass": 5,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Return all categories",
+			"id": "8efddfcf-b7df-4f2e-84e9-06d442426a47",
+			"url": "http://localhost:3030/categories?$limit=0&$skip=0",
+			"time": "58",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "Creates a new category",
+			"id": "41123361-3aa1-4ea1-8f0a-bf531d3b379d",
+			"url": "http://localhost:3030/categories",
+			"time": "12",
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Total number is incremented": {
+					"pass": 5,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Returns a categories based on category ID",
+			"id": "75c90505-5150-43ca-99bb-75a6d91658ec",
+			"url": "http://localhost:3030/categories/39946",
+			"time": "7",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 5,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Update a categories based on category ID",
+			"id": "2fdc2382-e40b-4912-868b-87c5bee07ab6",
+			"url": "http://localhost:3030/categories/39946",
+			"time": "7",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Response data is correct": {
+					"pass": 5,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Deletes a single category based on the ID supplied",
+			"id": "c94ce926-1286-4948-b9df-6c6aa3a4b877",
+			"url": "http://localhost:3030/categories/39946",
+			"time": "83",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Deleted product cannot be found": {
+					"pass": 5,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Returns the current version of the API Playground being run",
+			"id": "eecc40e5-b764-4019-85e9-5c42225e41f1",
+			"url": "http://localhost:3030/version",
+			"time": "3",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 5,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Returns healthcheck information about the system",
+			"id": "3f91f3f1-a2ee-4509-83c9-80c0cb2eec69",
+			"url": "http://localhost:3030/healthcheck",
+			"time": "32",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 5,
+					"fail": 0
+				}
+			}
+		}
+	],
+	"synced": false
+}
