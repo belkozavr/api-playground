@@ -8,12 +8,12 @@ Postman, Newman
 Follow the guide to setup man environment:
  https://learning.getpostman.com/docs/postman/launching_postman/installation_and_updates
 
-< git clone https://github.com/belkozavr/api-playground.git
+```git clone https://github.com/belkozavr/api-playground.git
 cd api-playground
 npm install
 npm start
 cd public/man/OBE_man_collections
-newman run Best-Buy-API-Playground.postman_collection.json -e BestBuyAPI.postman_environment.json -d BestBuyData.csv >
+newman run Best-Buy-API-Playground.postman_collection.json -e BestBuyAPI.postman_environment.json -d BestBuyData.csv```
 
 ## Test cases:
 
