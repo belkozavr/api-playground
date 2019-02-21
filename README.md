@@ -3,7 +3,7 @@ Demo test cases on BestBuy API (educational playground)
 
 Postman, Newman
 
-##Prerequisites:
+## Prerequisites:
 
 Follow the guide to setup man environment:
  https://learning.getpostman.com/docs/postman/launching_postman/installation_and_updates
