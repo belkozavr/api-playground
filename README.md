@@ -16,6 +16,14 @@ npm start
 cd public/man/OBE_postman_collections
 newman run Best-Buy-API-Playground.postman_collection.json -e BestBuyAPI.postman_environment.json -d BestBuyData.csv
 ```
+## Short explanation of selected solution
+
+To automate tests we imported swagger json into Postman. For the new collection we created an environment and basic data set. 
+We didn't repeat tests available in the examples. 
+Basic test suite structure is provided in Test Cases section below. Almost the same test cases are performed for every endpoint in the collection. Every endpoint has a dedicated folder in the collection. 
+
+// TODO: Improve data set to include specific payload. Improve collection to have less repetitions using endpoint as variable. 
+
 
 ## Test cases:
 
