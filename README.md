@@ -5,7 +5,7 @@ Postman, Newman
 
 ## Prerequisites:
 
-Follow the guide to setup man environment:
+Follow the guide to setup postman environment:
  https://learning.getpostman.com/docs/postman/launching_postman/installation_and_updates
 
 ```
@@ -13,13 +13,13 @@ git clone https://github.com/belkozavr/api-playground.git
 cd api-playground
 npm install
 npm start
-cd public/man/OBE_man_collections
+cd public/man/OBE_postman_collections
 newman run Best-Buy-API-Playground.postman_collection.json -e BestBuyAPI.postman_environment.json -d BestBuyData.csv
 ```
 
 ## Test cases:
 
-> environments:
+> endpoints:
 > * /products
 > * /stores
 > * /services
@@ -46,7 +46,6 @@ newman run Best-Buy-API-Playground.postman_collection.json -e BestBuyAPI.postman
     * Status code is 201
     * Item data schema is valid
     * Responce contains Item id
-    * Response contains correct price
 
 * Select Item by id
 
